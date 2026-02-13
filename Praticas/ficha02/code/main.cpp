@@ -175,6 +175,13 @@ void processKeys(unsigned char key, int xx, int yy) {
 	glutPostRedisplay();
 }
 
+void processSpecial(int key, int xx, int yy) {
+	switch (key) { 
+
+	}
+	glutPostRedisplay();
+}
+
 
 
 
@@ -195,6 +202,7 @@ int main(int argc, char **argv) {
 // put here the registration of the keyboard callbacks
 
     glutKeyboardFunc(processKeys);
+	glutSpecialFunc(processSpecial);
 
 
 //  OpenGL settings
